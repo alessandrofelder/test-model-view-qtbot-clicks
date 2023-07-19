@@ -1,0 +1,21 @@
+name: test-model-view-qtbot-clicks
+display_name: test_model_view_qtbot_clicking
+contributions:
+  commands:
+    - id: test-model-view-qtbot-clicks.make_qwidget
+      python_name: test_model_view_qtbot_clicks._widget:ExampleQWidget
+      title: Make example QWidget
+    - id: test-model-view-qtbot-clicks.make_magic_widget
+      python_name: test_model_view_qtbot_clicks._widget:example_magic_widget
+      title: Make example magic widget
+    - id: test-model-view-qtbot-clicks.make_func_widget
+      python_name: test_model_view_qtbot_clicks._widget:example_function_widget
+      title: Make example function widget
+  widgets:
+    - command: test-model-view-qtbot-clicks.make_qwidget
+      display_name: Example QWidget
+    - command: test-model-view-qtbot-clicks.make_magic_widget
+      display_name: Example Magic Widget
+    - command: test-model-view-qtbot-clicks.make_func_widget
+      autogenerate: true
+      display_name: Example Function Widget
